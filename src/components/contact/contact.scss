@@ -1,0 +1,108 @@
+.contact {
+
+    display: flex;
+    justify-content: end;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        list-style-type: none;
+        padding: 0;
+
+        &__youtube {
+            background: url(../img/youtube-logo.png) center center no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
+
+            @media(max-width: 321px) {
+                width: 25px;
+                height: 25px;
+                margin: 0;
+                margin-left: 25px;
+            }
+        }
+
+        &__vk {
+            background: url(../img/vk-logo.png) center center no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
+
+            @media(max-width: 321px) {
+                width: 25px;
+                height: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        &__facebook {
+            background: url(../img/facebook-logo.png) center center no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
+
+            @media(max-width: 321px) {
+                width: 25px;
+                height: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        &__twitter {
+            background: url(../img/twitter-logo.png) center center no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
+
+            @media(max-width: 321px) {
+                width: 25px;
+                height: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        &__twitch {
+            background: url(../img/twitch-logo.png) center center no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
+
+            @media(max-width: 321px) {
+                width: 25px;
+                height: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        &__instagram {
+            background: url(../img/instagram-logo.png) center center no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
+
+            @media(max-width: 321px) {
+                width: 25px;
+                height: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        @media(max-width: 321px) {
+            position: absolute;
+            left: -5px;
+            width: 296px;
+            height: 25px;
+        }
+    }
+}
+
+a {
+    height: fit-content;
+}
