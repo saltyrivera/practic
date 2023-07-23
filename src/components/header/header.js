@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Contant from '../contact';
 import Title from '../title';
 import './header.scss'
 
-export default class Header extends Component {
-    render() {
-        return (
-            <>
-                <Title />
-                <Contant />
-            </>
-        ) 
-    }
-}
+const header = ({className}) => {
+    return (
+        <div className={className}>
+            <Title />
+            <Contant />
+        </div>
+    );
+};
+
+export default header;

@@ -3,98 +3,82 @@
     src: url(../fonts/Archangelsk.ttf);
 }
 
+.whitebottom {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    content: '';
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    display: none;
+
+    @media(max-width: 560px) {
+        display: block;
+    }
+}
+
 
 .yellowblock {
     position: absolute;
     background-color: yellow;
     width: 624px;
-    height: 369px;
-    top: 631px;
-    left: 976px;
+    padding: 70px;
+    right: 17%;
+    bottom: 0;
     clip-path: polygon(10% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 15%);
     display: grid;
+    box-sizing: border-box;
+    z-index: 5;
 
-    @media(max-width: 1025px) {
-        top: 631px;
-        left: 364px;
+    @media(max-width: 1024px) {
+        right: 5%;
     }
 
-    @media(max-width: 321px) {
-        width: 320px;
-        height: 207px;
-        top: 530px;
-        left: 0px;
+    @media(max-width: 560px) {
+        width: 100%;
+        padding: 30px 12px;
+        left: 0;
     }
 
     &__text {
         font-family: Archangelsk;
-        width: 484px;
-        height: 126px;
         display: flex;
-        position: relative;
-        top: 66px;
-        left: 70px;
         font-size: 62px;
         line-height: 63.3px;
         font-weight: 400;
 
-        @media(max-width: 321px) {
+        @media(max-width: 560px) {
             text-align: center;
-            width: 295px;
-            height: 62px;
-            top: 30px;
-            left: 13px;
             font-size: 30px;
             font-weight: 400;
             line-height: 30px;
         }
     }
 
-    &__container {
-        position: relative;
-        left: 70px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
+
+    &__button {
+        font-family: 'Roboto';
         width: 272px;
         height: 78px;
-        border: none;
+        background-color: black;
+        color: yellow;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 25px;
 
-        @media(max-width: 321px) {
+        @media(max-width: 560px) {
             text-align: center;
             width: 244px;
             height: 60px;
-            top: 0px;
+            top: 19px;
             left: 38px;
-            font-size: 30px;
-            font-weight: 400;
-            line-height: 30px;
-        }
-
-        &__button {
-            font-family: 'Roboto';
-            width: 272px;
-            height: 78px;
-            gap: 10px;
-            background-color: black;
-            color: yellow;
-            font-size: 24px;
-            line-height: 40px;
+            font-size: 20px;
             font-weight: 700;
-            letter-spacing: 1px;
-
-            @media(max-width: 321px) {
-                text-align: center;
-                width: 244px;
-                height: 60px;
-                top: 19px;
-                left: 38px;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 40px;
-            }
-    
-
+            line-height: 40px;
         }
     }
 }

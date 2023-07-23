@@ -3,12 +3,13 @@ import './yellowBlock.scss';
 
 const Block = () => {
     return (
+        <>
         <div className='yellowblock'>
             <span className='yellowblock__text'>Доступно на всех платформах</span>
-            <div className='yellowblock__container'>
-                <button className='yellowblock__container__button'>Узнать больше</button>
-            </div>
+            <button className='yellowblock__button'>Узнать больше</button>
         </div>
+        <div className='whitebottom'></div>
+        </>
     )
 }
 
