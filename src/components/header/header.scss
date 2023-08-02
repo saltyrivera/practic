@@ -1,26 +1,27 @@
 .header {
     position: absolute;
-    width: 1280px;
     height: 74px;
-    top: 20px;
-    left: 320px;
+    top: 2%;
+    width: 67%;
+    right: 17%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media(max-width: 1025px) {
-        width: 952px;
-        height: 74px;
-        left: 36px;
-        top: 20px;
+
+    @media(max-width: 1024px) {
+        right: 5%;
+        width: 93%;
     }
 
-    @media(max-width: 321px) {
-        position: absolute;
-        width: 320px;
-        height: 85px;
-        left: 0px;
-        top: 20px;
-
+    @media(max-width: 770px) {
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        width: 56%;
+        height: 150px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        right: 22%;
     }
 }

@@ -10,6 +10,13 @@
         top: 55.38px;
         left: 178.99px;
 
+        @media(max-width:770px) {
+            left: 60%;
+            top: 37%;
+            width: 90px;
+            height: 9px;
+        }
+
         @media(max-width: 321px) {
             position: absolute;
             top: 37px;
@@ -17,14 +24,6 @@
             width: 60px;
             height: 6px;
         }
-    }
-
-    @media(max-width: 321px) {
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        top: 0px;
-        left: 60px;
     }
 }
 

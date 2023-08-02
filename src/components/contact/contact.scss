@@ -5,7 +5,7 @@
 
     &__container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 60px 60px 60px 60px 60px 60px;
         list-style-type: none;
         padding: 0;
 
@@ -22,6 +22,11 @@
                 margin: 0;
                 margin-left: 25px;
             }
+
+            @media(max-width: 770px) {
+                margin-left: 0;
+            }
+
         }
 
         &__vk {
@@ -35,6 +40,10 @@
                 width: 25px;
                 height: 25px;
                 margin-left: 25px;
+            }
+
+            @media(max-width: 770px) {
+                margin-left: 0;
             }
         }
 
@@ -50,6 +59,11 @@
                 height: 25px;
                 margin-left: 25px;
             }
+
+            @media(max-width: 770px) {
+                margin-left: 0;
+            }
+
         }
 
         &__twitter {
@@ -63,6 +77,10 @@
                 width: 25px;
                 height: 25px;
                 margin-left: 25px;
+            }
+
+            @media(max-width: 770px) {
+                margin-left: 0;
             }
         }
 
@@ -78,6 +96,10 @@
                 height: 25px;
                 margin-left: 25px;
             }
+
+            @media(max-width: 770px) {
+                margin-left: 0;
+            }
         }
 
         &__instagram {
@@ -92,6 +114,10 @@
                 height: 25px;
                 margin-left: 25px;
             }
+
+            @media(max-width: 770px) {
+                margin-left: 0;
+            }
         }
 
         @media(max-width: 321px) {
@@ -100,6 +126,11 @@
             width: 296px;
             height: 25px;
         }
+
+        @media(max-width: 770px) {
+            padding-left: 30px;
+        }
+        
     }
 }
 
