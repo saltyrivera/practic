@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './contact.scss';
 
-export default class Contact extends Component {
-    render() {
+const Contact = () => {
         return (
             <div className='contact'>
                 <ul className='contact__container'>
@@ -14,6 +13,7 @@ export default class Contact extends Component {
                         <a href='https://youtube.com'><li className='contact__container__instagram'></li></a>
                 </ul>
             </div>
-        )
-    }
-}
+        );
+};
+
+export default Contact;

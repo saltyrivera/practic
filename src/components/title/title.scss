@@ -19,11 +19,16 @@
 
         @media(max-width: 321px) {
             position: absolute;
-            top: 37px;
-            left: 119px;
+            top: 25%;
+            left: 60%;
             width: 60px;
             height: 6px;
         }
+    }
+
+    @media(max-width: 320px) {
+        width: 200px;
+        height: 50px;
     }
 }
 

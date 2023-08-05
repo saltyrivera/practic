@@ -3,7 +3,7 @@ import Contant from '../contact';
 import Title from '../title';
 import './header.scss'
 
-const header = ({className}) => {
+const Header = ({className}) => {
     return (
         <div className={className}>
             <Title />
@@ -12,4 +12,4 @@ const header = ({className}) => {
     );
 };
 
-export default header;
+export default Header;

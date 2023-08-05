@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './yellowBlock.scss';
 
 const Block = () => {
@@ -13,11 +13,10 @@ const Block = () => {
     )
 }
 
-export default class YellowBlock extends Component {
-
-    render() {
-        return (
-            <Block/>
-        )
-    }
+const YellowBlock = () => {
+    return (
+        <Block/>
+    )
 }
+
+export default YellowBlock;

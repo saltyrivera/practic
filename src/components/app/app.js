@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './app.scss';
 import Welcome from '../welcome/Welcome';
+import SecondBlock from '../secondBlock';
 
-export default class App extends Component {
-    render() {
+const App = () => {
         return (
-            <Welcome/>
-        )
-    }
-}
+            <>
+                <Welcome/>
+                <SecondBlock/>
+            </>
+        );
+};
+
+export default App;
