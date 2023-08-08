@@ -16,7 +16,9 @@ import imgThree from '../img/background-three.png';
 
 const Welcome = () => {
     return (
-        <>
+        <div className='welcome-block'>
+            <Header className='header'/>
+            <YellowBlock/>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 loop={true}
@@ -30,11 +32,7 @@ const Welcome = () => {
                 <SwiperSlide><img src={imgTwo} alt=''></img></SwiperSlide>
                 <SwiperSlide><img src={imgThree} alt=''></img></SwiperSlide>
             </Swiper>
-            <div className='welcome-block'>
-                <Header className='header'/>
-                <YellowBlock/>
-            </div>
-        </>
+        </div>
     );
 };
 
