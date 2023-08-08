@@ -5,7 +5,9 @@ import './yellowBlock.scss';
 // Мне кажется, здесь Block лишний. У тебя внутри YellowBlock нет никакого другого кода и ты туда просто
 // добавляешь содержимое блока Block. В таком случае от Block можно избавиться и сразу все перенести в YellowBlock
 
-const Block = () => {
+// TOCONFIRMED
+
+const YellowBlock = () => {
     return (
         <>
             <div className='yellowblock'>
@@ -14,12 +16,6 @@ const Block = () => {
             </div>
             <div className='whitebottom'></div>
         </>
-    )
-}
-
-const YellowBlock = () => {
-    return (
-        <Block/>
     )
 }
 
