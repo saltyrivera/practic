@@ -1,6 +1,91 @@
+@font-face {
+    font-family: Archangelsk;
+    src: url(../../fonts/Archangelsk.ttf);
+}
+
 .secondBlock {
-    width: 1000px;
-    height: 1000px;
+    width: 100vw;
+    height: 777px;
     background-color: white;
     display: block;
+    padding: 3.5% 0 0 16.5%;
+    box-sizing: border-box;
+
+    @media(max-width: 1500px) {
+        height: 1101px;
+        padding: 6.5% 0 0 3.5%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+
+    &__title {
+        font-family: Archangelsk;
+        font-weight: 400;
+        font-size: 62px;
+        line-height: 62px;
+
+        @media(max-width: 1024px) {
+            width: 60.5%;
+        }
+    }
+
+    &__text {
+        width: 60%;
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 400;
+        color: #777777;
+
+        @media(max-width: 1024px) {
+            width: 79%;
+        }
+    }
+
+    &__color-text {
+        color: #52BEDC;
+    }
+
+    &__img-block {
+        padding-top: 70px;
+        display: grid;
+        grid-template-areas: 
+            "a c c"
+            "b c c";
+        grid-template-rows: 1.14fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        align-content: space-between;
+
+        @media(max-width: 1500px) {
+            grid-template-areas: 
+            "a b"
+            "c c";
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
+            // justify-items: center;
+        }
+
+
+        &__first-image {
+            grid-area: a;
+        }
+
+        &__second-image {
+            grid-area: b;
+        }
+
+        &__third-image {
+            @media(max-width: 1500px){
+                img {
+                    width: 952px;
+                    height: 424px;
+                }
+            }
+            
+            grid-area: c;
+        }
+    }
 }
