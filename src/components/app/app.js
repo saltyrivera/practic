@@ -2,6 +2,7 @@ import React from 'react';
 import './app.scss';
 import Welcome from '../welcome/Welcome';
 import SecondBlock from '../secondBlock';
+import ThirdBlock from '../thirdBlock';
 
 // TODO
 // Папка components нужна только для хранения самих React компонентов, в ней не должно быть ничего лишнего.
@@ -14,6 +15,7 @@ const App = () => {
             <>
                 <Welcome/>
                 <SecondBlock/>
+                <ThirdBlock/>
             </>
         );
 };

@@ -3,6 +3,7 @@ import './secondBlock.scss';
 import imgOne from '../../img/secondBlockImage-1.png';
 import imgTwo from '../../img/secondBlockImage-2.png';
 import imgThree from '../../img/secondBlockImage-3.png';
+import imgFooter from '../../img/secondBlock-footer.png';
 
 
 const SecondBlock = () => {
@@ -15,6 +16,7 @@ const SecondBlock = () => {
                 <div className="secondBlock__img-block__second-image"><img src={imgTwo} alt=''></img></div>
                 <div className="secondBlock__img-block__third-image"><img src={imgThree} alt=''></img></div>
             </div>
+            <img src={imgFooter} className="secondBlock__footer" alt=''></img>
         </div>
     )
 }
