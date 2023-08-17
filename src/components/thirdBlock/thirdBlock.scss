@@ -75,7 +75,7 @@
                 outline: none;
                 background-color: black;
                 color: white;
-                margin-bottom: 50px;
+                margin-bottom: 35px;
                 font-family: Roboto;
                 font-size: 18px;
                 line-height: 21px;
@@ -83,11 +83,93 @@
             }
 
             &__screenshot {
+                opacity: 0;
+                display: none;
+            }
+
+            &__label {
                 list-style-type: none;
                 width: 460px;
                 height: 120px;
                 border: 2px dashed #777777;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 35px;
+
+                &__text {
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 21px;
+                    font-family: Roboto;
+                    text-decoration-line: underline;
+                    margin: 0 0 7px 0;
+                }
+
+                &__typefile {
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: 300;
+                    font-family: Roboto;
+                }
             }
+
+            &__submit {
+                width: 192px;
+                height: 59px;
+                background-color: #F8F200;
+                border: none;
+                font-family: Roboto;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 15px;
+            }
+
+            &__checkbox__label {
+                display: flex;
+                align-items: center;
+
+                &__checkbox {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    clip: rect(0 0 0 0);
+                }
+
+                &__checkbox:checked + .thirdBlock__content__form__checkbox__label__style::before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background-image: url('../../img/checkbox.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                }
+
+                &__style {
+                    position: absolute;
+                    border: 1px solid #777777;
+                    width: 14px;
+                    height: 14px;
+                    margin-right: -24px;
+                }
+
+                &__text {
+                    padding-left: 24px;
+                    font-weight: 300;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+            
         }
     }
 }
